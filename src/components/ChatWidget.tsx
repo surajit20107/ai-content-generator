@@ -35,6 +35,11 @@ export default function ChatWidget() {
     setIsTyping(true);
 
     try {
+      // Check if Puter.js is loaded
+      if (!window.puter || !window.puter.ai) {
+        throw new Error("Puter.js not loaded yet");
+      }
+
       // Build a simple context string from previous messages
       const historyContext = messages.map((m) => `${m.from === "user" ? "User" : "Assistant"}: ${m.text}`).join("\n");
       const fullPrompt = `${historyContext}\nUser: ${userMsg}\nAssistant:`;
@@ -50,10 +55,11 @@ export default function ChatWidget() {
 
       setMessages((prev) => [...prev, { text: reply, from: "bot" }]);
     } catch (err) {
+      console.error("Chat error:", err);
       setMessages((prev) => [
         ...prev,
         {
-          text: "Sorry, I'm having trouble connecting right now.",
+          text: "Sorry, I'm having trouble connecting right now. Please try again in a moment.",
           from: "bot",
         },
       ]);
