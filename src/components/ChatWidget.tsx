@@ -41,18 +41,12 @@ export default function ChatWidget() {
       const systemPrompt =
         "You are a friendly, helpful support assistant for WriteFlow. You help users with the SaaS product and give brief writing advice.";
 
-      //const reply = await callGeminiAPI(fullPrompt, systemPrompt);
-
-      const messages = [
-        { role: "system", content: systemPrompt },
-        { role: "user", content: fullPrompt },
-      ]
-
-      const response = await window.puter.ai.chat(messages, {
-        model: "gpt-4o-nano"
+      const response = await window.puter.ai.chat(fullPrompt, {
+        model: "gpt-4o-nano",
+        system: systemPrompt
       })
 
-      const reply = response.choices[0].message.content
+      const reply = response.message?.content || response
 
       setMessages((prev) => [...prev, { text: reply, from: "bot" }]);
     } catch (err) {
