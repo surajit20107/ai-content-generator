@@ -37,7 +37,6 @@ export default function Home() {
             View Comparison <ArrowRight className="h-5 w-5" />
           </Link>
         </div>
-        <ChatWidget />
       </section>
     </div>
   );

@@ -36,9 +36,9 @@ export default function ChatWidget() {
 
     try {
       // Check if Puter.js is loaded
-      if (!window.puter || !window.puter.ai) {
-        throw new Error("Puter.js not loaded yet");
-      }
+      // if (!window.puter || !window.puter.ai) {
+      //   throw new Error("Puter.js not loaded yet");
+      // }
 
       // Build a simple context string from previous messages
       const historyContext = messages.map((m) => `${m.from === "user" ? "User" : "Assistant"}: ${m.text}`).join("\n");
@@ -47,7 +47,7 @@ export default function ChatWidget() {
         "You are a friendly, helpful support assistant for WriteFlow. You help users with the SaaS product and give brief writing advice.";
 
       const response = await window.puter.ai.chat(fullPrompt, {
-        model: "gpt-4o-nano",
+        model: "gpt-4o-mini",
         system: systemPrompt
       })
 
