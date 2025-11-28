@@ -49,9 +49,10 @@ export default function GenerateContent() {
         );
       }
     } catch (err) {
-      console.error(err);
       setIsGenerating(false);
       setError("Oops! The AI got writer's block. Please try again.");
+    } finally {
+      setIsGenerating(false);
     }
   };
 
