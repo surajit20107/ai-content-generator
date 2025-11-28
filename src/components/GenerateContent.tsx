@@ -68,14 +68,11 @@ export default function GenerateContent() {
     >
       <div className="max-w-5xl mx-auto px-4">
         <div className="text-center mb-12">
-          <span className="text-indigo-600 font-semibold tracking-wider uppercase text-sm">
-            Interactive Demo
-          </span>
           <h2 className="text-3xl md:text-4xl font-bold mt-2 text-gray-900">
-            Experience the Magic ✨
+            Experience the Magic of AI Writing ✨
           </h2>
           <p className="text-gray-600 mt-4">
-            Try it right now. Powered by Gemini.
+            Powered by the latest AI models.
           </p>
         </div>
 
