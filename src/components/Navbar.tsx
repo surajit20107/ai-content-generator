@@ -30,10 +30,10 @@ export default function Navbar() {
                             Features
                         </Link>
                         <Link
-                            href="/demo"
+                            href="/writer"
                             className="text-gray-600 hover:text-indigo-600 transition"
                         >
-                            Live Demo
+                            Start Writing
                         </Link>
                         <Link
                             href="/pricing"
@@ -63,8 +63,8 @@ export default function Navbar() {
                     <Link href="/features" className="block text-gray-600">
                         Features
                     </Link>
-                    <Link href="/demo" className="block text-gray-600">
-                        Live Demo
+                    <Link href="/writer" className="block text-gray-600">
+                        Start Writing
                     </Link>
                     <Link href="/pricing" className="block text-gray-600">
                         Pricing

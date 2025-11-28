@@ -1,19 +1,11 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import ChatWidget from "@/components/ChatWidget";
 
 export default function Home() {
   return (
     <div className="min-h-screen font-sans text-gray-900 bg-white">
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto text-center">
-        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-indigo-50 text-indigo-700 text-sm font-medium mb-8">
-          <span className="relative flex h-2 w-2">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
-            <span className="relative inline-flex rounded-full h-2 w-2 bg-indigo-500"></span>
-          </span>
-          v2.0 is live with Next.js support
-        </div>
         <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-gray-900 mb-6">
           Write faster,
           <br />
@@ -27,7 +19,7 @@ export default function Home() {
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
-            href="/demo"
+            href="/writer"
             className="px-8 py-4 bg-indigo-600 text-white rounded-xl font-bold text-lg hover:bg-indigo-700 transition shadow-lg shadow-indigo-200">
             Start Writing for Free
           </Link>
