@@ -27,7 +27,7 @@ export default function Home() {
             Start Writing for Free
           </Link>
           <Link
-            href="/comparison"
+            href="/pricing#comparison"
             className="px-8 py-4 bg-white text-gray-700 border border-gray-200 rounded-xl font-bold text-lg hover:bg-gray-50 transition flex items-center gap-2 justify-center"
           >
             View Comparison <ArrowRight className="h-5 w-5" />
