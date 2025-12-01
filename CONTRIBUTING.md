@@ -38,11 +38,11 @@ Before creating bug reports, please check the existing issues list as you might 
 
 ### Suggesting Enhancements
 
-This section guides you through submitting an enhancement suggestion for [Project Name], **including completely new features and minor improvements to existing functionality**.
+This section guides you through submitting an enhancement suggestion for writeFlow, **including completely new features and minor improvements to existing functionality**.
 
 *   **Use a clear and descriptive title** for the issue to identify the suggestion.
 *   **Provide a step-by-step description of the suggested enhancement** in as many details as possible.
-*   **Explain why this enhancement would be useful** to most [Project Name] users.
+*   **Explain why this enhancement would be useful** to most writeFlow users.
 
 ### Your First Code Contribution
 
